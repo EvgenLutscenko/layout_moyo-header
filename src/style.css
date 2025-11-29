@@ -16,7 +16,7 @@ li {
 
 /* #endregion */
 html {
-  --link-color: #00ACDC;
+  --link-color: #00acdc;
 }
 
 body {
@@ -44,21 +44,27 @@ body {
   margin-left: 20px;
 }
 
-
 .nav__link {
+  display: block;
   position: relative;
   text-transform: uppercase;
   font-size: 12px;
+  text-align: center;
   line-height: 60px;
+  height: 60px;
 }
 
 .nav__link:hover {
   color: var(--link-color);
 }
 
+.is-active {
+  color: var(--link-color);
+}
+
 .is-active::after {
   position: absolute;
-  bottom: -18.5px;
+  bottom: 0;
   left: 0;
   right: 0;
   content: '';
